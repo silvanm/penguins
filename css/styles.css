@@ -1,0 +1,95 @@
+body {
+  background-color: #333;
+  color: white;
+  font-family: "Open Sans", "Arial", "Liberation Sans", sans-serif;
+}
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* Necessary for positioning the content in the viewport vertical middle */
+.outer {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 675px;
+}
+div {
+  box-sizing: border-box;
+}
+#playground-and-stack {
+  position: relative;
+  width: 680px;
+}
+#playground {
+  display: inline-block;
+  width: 450px;
+  height: 450px;
+  border: 1px solid #666;
+}
+#stack {
+  display: inline-block;
+  width: 150px;
+  height: 450px;
+  margin-left: 70px;
+  border: 1px solid #666;
+}
+.karte {
+  border: 1px solid #ccc;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  transition: transform 0.1s, left 0.1s ease, top 0.1s ease;
+  float: left;
+  background-size: cover;
+}
+.slow-transitions .karte {
+  transition: transform 0.2s, left 0.3s ease, top 0.3s ease;
+}
+.control-row {
+  margin: 10px 0;
+}
+#controls {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #666;
+}
+#speed {
+  cursor: pointer;
+}
+button,
+label {
+  font-size: 1em;
+  font-family: "Open Sans", "Arial", "Liberation Sans", sans-serif;
+}
+label {
+  display: block;
+  padding-bottom: 5px;
+}
+@media screen and (max-width: 800px) {
+  #buttons {
+    width: 100%;
+  }
+  .btn {
+    width: 33%;
+    height: 80px;
+  }
+  .outer {
+    display: block;
+    height: auto;
+  }
+  .middle {
+    display: block;
+  }
+}

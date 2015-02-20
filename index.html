@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <title>The Penguin-Puzzle-Solver</title>
+    <meta property="og:description" content="A small Javascript app to show my kids how a computer can solve their puzzle (and a fun
+    coding task for dad). They actual problem solving takes about half a second to try 1297 combinations. To picture the
+    process I am slowing down the process massively." />
+    <meta property="og:title"
+    content="The Penguin-Puzzle-Solver" />
+    <meta property="og:image" content="http://www.muehlemann.com/penguins/images/screenshot.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="315">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=680px">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Oswald:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/Card.js"></script>
+    <script type="text/javascript" src="js/Cardstack.js"></script>
+    <script type="text/javascript" src="js/Playground.js"></script>
+    <script type="text/javascript" src="js/Replaystore.js"></script>
+    <script type="text/javascript" src="js/Player.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css" />
+</head>
+<body class="slow-transitions">
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-10357230-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type="text/javascript" src="js/app.js"></script>
+<div class="outer">
+    <div class="middle">
+        <div class="inner">
+            <h1>The Penguin-Puzzle-Solver</h1>
+
+            <p>An attempt to show my kids how a computer can solve their puzzle (and a fun coding task for dad). They actual problem solving
+                takes about half a second to try 1297 combinations. To picture the process I am slowing down
+                the process massively.</p>
+
+            <p>Silvan Mühlemann, 18. February 2015</p>
+
+            <div id="playground-and-stack">
+                <div id="playground"></div>
+                <div id="stack"></div>
+            </div>
+            <div id="controls">
+                <div class="control-row">
+
+                    <div id="buttons" class="control-row btn-group btn-group-lg">
+                        <button id="reset" type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span>
+                        </button>
+                        <button id="start" type="button" class="btn primary">
+                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <label id="speedcontrol">Speed</label>
+
+                    <div id="speed"></div>
+                </div>
+                <div class="control-row">
+                    <label id="progresslabel">Progress</label>
+
+                    <div id="stepcounter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
